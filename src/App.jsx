@@ -15,9 +15,9 @@ import About from './pages/About'
 import {
   createBrowserRouter,
   RouterProvider,
-  Outlet
+  Outlet,
+  Navigate
 } from 'react-router-dom'
-
 
 function PublicLayout() {
   return (
@@ -26,43 +26,40 @@ function PublicLayout() {
     </>
   )
 }
+
 function AuthLayout() {
   return (
     <>
-    <Navbar/>
+      <Navbar />
       <Outlet />
     </>
   )
 }
 
 const router = createBrowserRouter([
-  //public 
   {
-    element:<PublicLayout/>,
-     children: [
-      
+    element: <PublicLayout />,
+    children: [
       { path: "login", element: <Login /> },
       { path: "register", element: <Signup /> },
-      {path:"landing",element:<Landing/>}
+      { path: "landing", element: <Landing /> }
     ]
-  },{
-    //protected
-    element:<AuthLayout/>,
-      children: [
+  },
+  {
+    element: <AuthLayout />,
+    children: [
       { path: "/", element: <Home /> },
       { path: "home", element: <Home /> },
       { path: "dashboard", element: <Dashboard /> },
-      {path:"blog/:blogId",element:<BlogDetails/>},
-      {path:"write",element:<Write/>},
-      {path:"user/:userid",element:<GetUserProfile/>},
-      {path:"filter",element:<Filter/>},
-      {path:"search_user",element:<SearchUser/>},
-      {path:"update",element:<UpdateProfile/>},
-      {path:"about",element:<About/>}
-
-
+      { path: "blog/:blogId", element: <BlogDetails /> },
+      { path: "write", element: <Write /> },
+      { path: "user/:userid", element: <GetUserProfile /> },
+      { path: "filter", element: <Filter /> },
+      { path: "search_user", element: <SearchUser /> },
+      { path: "update", element: <UpdateProfile /> },
+      { path: "about", element: <About /> },
+      { path: "*", element: <Navigate to="/" replace /> }
     ]
-    
   }
 ])
 
