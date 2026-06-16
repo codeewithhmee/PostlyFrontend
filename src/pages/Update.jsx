@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../css/Write.css";
+import "../css/write.css";
 const CATEGORIES = [
   "Technology",
   "Programming",
