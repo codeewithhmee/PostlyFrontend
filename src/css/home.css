@@ -1,0 +1,106 @@
+.home_main_cont {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  min-height: 100vh;
+}
+
+.home_header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.home_header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.home_header p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.all_blogs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* Card wrapper if needed */
+.blog_card {
+  flex: 1 1 320px;
+  max-width: 380px;
+  min-width: 300px;
+}
+
+.empty_state {
+  width: 100%;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.empty_state h2 {
+  margin-bottom: 10px;
+}
+
+.empty_state p {
+  color: #666;
+}
+
+.pagination {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.pagination button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  background: #111;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+
+.pagination button:disabled {
+  background: #cfcfcf;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .home_main_cont {
+    padding: 20px 15px;
+  }
+
+  .home_header h1 {
+    font-size: 2.2rem;
+  }
+
+  .all_blogs {
+    gap: 20px;
+  }
+
+  .blog_card {
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .pagination {
+    gap: 10px;
+  }
+
+  .pagination button {
+    padding: 10px 18px;
+  }
+}

@@ -1,0 +1,11 @@
+*{
+    margin: 0;padding: 0;
+}
+.small_placeholder::placeholder {
+  font-size: medium;
+  font-weight: 400;
+  color: #999;
+}
+.otp_button{
+  background-color: antiquewhite;
+}

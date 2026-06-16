@@ -1,0 +1,150 @@
+/* About.css */
+
+.about-wrapper {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 0 20px;
+  font-family: sans-serif;
+}
+
+.about-hero {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-hero h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.about-hero p {
+  font-size: 18px;
+  color: #6b7280;
+  line-height: 1.7;
+}
+
+.about-section {
+  margin-bottom: 45px;
+}
+
+.about-section h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #111827;
+  border-left: 4px solid #111827;
+  padding-left: 12px;
+}
+
+.about-section p {
+  font-size: 16px;
+  color: #374151;
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+
+/* Features grid */
+.about-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.about-feature-card {
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #f9fafb;
+}
+
+.about-feature-card span {
+  font-size: 24px;
+}
+
+.about-feature-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 8px 0 6px;
+  color: #111827;
+}
+
+.about-feature-card p {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* Tech stack badges */
+.about-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.about-badge {
+  padding: 6px 14px;
+  background: #111827;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Contact */
+.about-contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.about-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  color: #374151;
+}
+
+.about-contact-item a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.about-contact-item a:hover {
+  text-decoration: underline;
+}
+.about_main {
+  position: relative;
+  min-height: 80vh;
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;          
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/myPictures/pic3.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15;        
+  z-index: 0;          
+}
+
+.about-wrapper {
+  position: relative;
+  z-index: 1;         
+}
+/* Responsive */
+@media (max-width: 600px) {
+  .about-features {
+    grid-template-columns: 1fr;
+  }
+
+  .about-hero h1 {
+    font-size: 28px;
+  }
+}

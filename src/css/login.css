@@ -1,0 +1,36 @@
+*{
+    margin: 0;padding: 0;
+}
+.login_page{
+height: 100vh;
+background-color: aqua;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+form{
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 20px;
+}
+form div{
+    margin: 10px;
+    background-color: blueviolet;
+    padding: 5px;
+}
+input,button{
+    padding: 5px;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid grey;
+    transition: .2s all;
+}
+input:hover,button:hover{
+transform: scale(0.97);
+}
+button{cursor: pointer;width: 70%;}

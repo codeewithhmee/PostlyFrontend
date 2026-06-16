@@ -1,0 +1,20 @@
+.user_profile{
+background-color: rgb(233, 234, 234);
+display: flex;
+margin: 10px;
+padding: 5px;
+border-radius: 10px;
+}
+.user_profile img{
+    margin-right: 15px;
+}
+.search_user_input_bar{
+margin: 10px;
+width: 80vw;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}

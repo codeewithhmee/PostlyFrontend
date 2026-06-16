@@ -1,0 +1,14 @@
+.cats{
+    display: flex;
+}
+.mm{
+    display: flex;
+    /* background-color: aquamarine; */
+    justify-content: center;
+    gap: 10px;
+    padding: 5px;
+}
+
+.search_wrap{
+    flex: 2;
+}

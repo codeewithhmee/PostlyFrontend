@@ -1,0 +1,137 @@
+.blog_details_container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.blog_header {
+  margin-bottom: 30px;
+}
+
+.category_tag {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: #f1f1f1;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.blog_header h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.blog_meta {
+  display: flex;
+  gap: 20px;
+  color: #666;
+}
+
+.blog_image {
+  margin: 30px 0;
+}
+
+.blog_image img {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.blog_content {
+  font-size: 1.15rem;
+  line-height: 1.9;
+  color: #333;
+  white-space: pre-wrap;
+  max-height: 500px;
+  overflow: auto;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 1.5rem;
+}
+.up{
+  display: flex;
+  margin: 5px;
+  align-items: center;
+  justify-content: center;
+
+}
+.up button{
+  padding: 5px;
+  color: white;
+  margin: 3px;
+ 
+}
+.image_up{
+  width: 20px;
+}
+
+.delete_sure{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.canceldeleteCont{
+  display: flex;
+  gap: 30px;
+}
+.specific_comment{
+  display: flex;
+  background-color: rgb(247, 251, 255);
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  margin: 3px;
+  border-radius: 10px;
+  position: relative;
+}
+.specific_comment h6{
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+  gap:4px;
+}
+.me{
+  color: rgb(93, 4, 142);
+  transform: scale(1.01);
+}
+.specific_comment h5{
+    overflow-wrap: break-word;
+     min-width: 0;
+}
+.load_more{
+  font-size: medium;
+  cursor: pointer;
+  margin: 10px;
+  color: rgb(112, 111, 111);
+}
+.i_comment{
+  /* background-color: #3c2121; */
+  padding: 10px;
+}
+.m{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.comment_bar{
+  flex: 5;
+  font-weight: 100;
+  color: #666;
+  padding: 10px;
+  /* font-size: 1px; */
+  margin-top: 5px;
+}
+.m button{
+  flex: 1;
+}
+.deleteIcon{
+position: absolute;
+right: 10px;
+cursor: pointer;
+}
